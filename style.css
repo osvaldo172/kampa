@@ -304,3 +304,39 @@ ul.nav.navbar-nav a{
     right: 40px;
     padding-top: 1px;
 }
+
+
+.logo{
+    padding-left: 28px;
+    padding-top: 10px;
+}
+
+.logo-menu{
+    position: absolute;
+    padding-left: 8px;
+    padding-top: 3px;
+    visibility: visible;
+}
+
+.escode-menu{
+    display: none;
+}
+
+
+
+.slider-circles{
+    opacity: 0.6;
+}
+
+.slider-circles.active{
+    opacity: 1;
+}
+
+.lion{
+    position: absolute;
+    z-index: -1;
+}
+
+.shop{
+    z-index: 1;
+}

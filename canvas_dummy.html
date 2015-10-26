@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>ctx.parallelogram()</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="style.less">
+    <script src="./parallelogram.js"></script>
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="shop-lion">
+    <img src="img/back-2.jpg" class="lion">
+    <canvas id="canvas" width="1280" height="800" class="shop"></canvas>
+</div>
+
+<script type="text/javascript">
+    if(document.getElementById("canvas").getContext){
+        create_parallelogram(-100, 800);
+    }
+    else {
+        $('body').append('This browser does not support HTML5 canvas.');
+    }
+
+    function create_parallelogram(posx, width_parallelogram){
+        var ctx = document.getElementById("canvas").getContext("2d");
+        clear_canvas(ctx);
+
+        ctx.strokeStyle = '#2fff00';
+        ctx.lineWidth = 3;
+        ctx.borderRight = 3;
+
+        var imageObj = new Image();
+        imageObj.onload = function(){
+            var pattern = ctx.createPattern(imageObj, 'repeat');
+            ctx.rect(0, 0, ctx.width, ctx.height);
+            ctx.fillStyle = pattern;
+            ctx.fill();
+        };
+        imageObj.src = "img/back-1.jpg";
+
+        ctx.parallelogram(parseInt(posx), 1, parseInt(width_parallelogram), 800);
+        ctx.fill();
+        ctx.stroke();
+    }
+
+    function clear_canvas(ctx){
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+</script>
+</body>
+
+<script>
+    function getMousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+            x: evt.clientX - rect.left,
+            y: evt.clientY - rect.top
+        };
+    }
+
+    var canvas = document.getElementById('canvas');
+    canvas.addEventListener('mousemove', function(evt) {
+        var mousePos = getMousePos(canvas, evt);
+        //var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+        create_parallelogram(-280, mousePos.x*1.52);
+    }, false);
+</script>
+
+<style>
+    body{
+        margin: 0;
+    }
+</style>
+</html>

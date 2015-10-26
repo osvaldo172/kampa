@@ -11,6 +11,7 @@
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style.less">
+    <link rel="stylesheet" type="text/css" href="animate.css">
 
 </head>
 
@@ -24,14 +25,14 @@
 <div id="project-carousel-first carousel-indicators carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
 
     <ol class="carousel-indicators">
-        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic"  data-to="0" class="active"></li>
-        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic" data-to="1"></li>
-        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic" data-to="2"></li>
-        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic" data-to="3"></li>
+        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic"  data-to="0" class="active slider-circles"></li>
+        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic" class="slider-circles" data-to="1"></li>
+        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic" class="slider-circles" data-to="2"></li>
+        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic" class="slider-circles" data-to="3"></li>
     </ol>
 
     <div class="carousel-inner">
-        <div class="item active">
+        <div class="item active animated fadeIn">
             <div class="contenedor">
                 <div class="contenedorHijo">
                     <div class="contenidoHijoInterior"></div>
@@ -42,15 +43,15 @@
             </div>
         </div>
 
-        <div class="item">
+        <div class="animated fadeIn item">
             <img src="img/riel/back2.jpg">
         </div>
 
-        <div class="item">
+        <div class="animated fadeIn item">
             <img src="img/riel/back3.jpg">
         </div>
 
-        <div class="item">
+        <div class="animated fadeIn item">
             <img src="img/riel/back4.jpg">
         </div>
     </div>
@@ -89,13 +90,13 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div class="item active shoes-carousel">
-            <img src="img/calzado/light_in_the_darkness.png" alt="placeholder">
-            <div class="bg-verde-azul description-shoes">
+            <img class="animated bounceInRight" src="img/calzado/light_in_the_darkness.png" alt="placeholder">
+            <div class="description-shoes change-color">
                 <div class="container">
-                    <h1 class="text-center">
+                    <h1 class="text-center animated bounceInLeft">
                         LIGHT IN THE DARKNESS
                     </h1>
-                    <p>
+                    <p class="animated bounceInLeft">
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
                     </p>
                     <a class="btn btn-carrito" href="#" role="button"><img src="img/carrito.png"></a>
@@ -103,13 +104,13 @@
             </div>
         </div>
         <div class="item shoes-carousel">
-            <img src="img/calzado/lethal_viper.png" alt="placeholder">
+            <img class="animated bounceInRight" src="img/calzado/lethal_viper.png" alt="placeholder">
             <div class="bg-azul description-shoes">
                 <div class="container">
-                    <h1 class="text-center white">
+                    <h1 class="text-center white animated bounceInLeft">
                         LETHAL VIPER
                     </h1>
-                    <p>
+                    <p class="animated bounceInLeft">
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
                     </p>
                     <a class="btn btn-carrito" href="#" role="button"><img src="img/carrito.png"></a>
@@ -117,13 +118,13 @@
             </div>
         </div>
         <div class="item shoes-carousel">
-            <img src="img/calzado/superlight.png" alt="placeholder">
+            <img class="animated bounceInRight" src="img/calzado/superlight.png" alt="placeholder">
             <div class="bg-naranja description-shoes">
                 <div class="container">
-                    <h1 class="text-center yellow">
+                    <h1 class="text-center yellow animated bounceInLeft">
                         SUPERLIGHT
                     </h1>
-                    <p>
+                    <p class="animated bounceInLeft">
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
                     </p>
                     <a class="btn btn-carrito" href="#" role="button"><img src="img/carrito.png"></a>
@@ -131,13 +132,13 @@
             </div>
         </div>
         <div class="item shoes-carousel">
-            <img src="img/calzado/classic_golden.png" alt="placeholder">
+            <img class="animated bounceInRight" src="img/calzado/classic_golden.png" alt="placeholder">
             <div class="bg-gris description-shoes">
                 <div class="container">
-                    <h1 class="text-center gold">
+                    <h1 class="text-center gold animated bounceInLeft">
                         CLASSIC GOLDEN
                     </h1>
-                    <p>
+                    <p class="animated bounceInLeft">
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor (N. del T. persona que se dedica a la imprenta) desconocido usó una galería de textos y los mezcló de tal manera que logró hacer un libro de textos especimen.
                     </p>
                     <a class="btn btn-carrito" href="#" role="button"><img src="img/carrito.png"></a>

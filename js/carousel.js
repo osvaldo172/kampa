@@ -33,8 +33,10 @@ $(document).on('ready',function(){
     $( window ).scroll(function() {
         if($("body").scrollTop()>=770){
             $(".menu").addClass("menu-fixed");
+            $(".menu-aux").removeClass("escode-menu");
         }else{
             $(".menu").removeClass("menu-fixed");
+            $(".menu-aux").addClass("escode-menu");
         }
     });
 

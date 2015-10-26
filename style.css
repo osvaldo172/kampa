@@ -340,3 +340,7 @@ ul.nav.navbar-nav a{
 .shop{
     z-index: 1;
 }
+
+.shop-lion{
+    margin-bottom: -5px;
+}

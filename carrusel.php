@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/carousel.js" ></script>
+    <script src="./parallelogram.js"></script>
 
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style.less">
@@ -19,7 +20,7 @@
 
 
 <div class="logo">
-    <img src="">
+    <img src="img/logo.png">
 </div>
 
 <div id="project-carousel-first carousel-indicators carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
@@ -33,14 +34,18 @@
 
     <div class="carousel-inner">
         <div class="item active animated fadeIn">
-            <div class="contenedor">
+            <div class="shop-lion">
+                <img src="img/back-2.jpg" class="lion">
+                <canvas id="canvas" width="1285" height="804" class="shop"></canvas>
+            </div>
+            <!--<div class="contenedor">
                 <div class="contenedorHijo">
                     <div class="contenidoHijoInterior"></div>
                 </div>
             </div>
 
             <div class="contenedor2">
-            </div>
+            </div>-->
         </div>
 
         <div class="animated fadeIn item">
@@ -58,6 +63,9 @@
 </div>
 
 <nav class="navbar navbar-default menu">
+    <div class="menu-aux">
+        <img src="img/logo.png" class="logo-menu">
+    </div>
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -172,7 +180,57 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    if(document.getElementById("canvas").getContext){
+        create_parallelogram(-100, 810);
+    }
+    else {
+        $('body').append('This browser does not support HTML5 canvas.');
+    }
 
+    function create_parallelogram(posx, width_parallelogram){
+        var ctx = document.getElementById("canvas").getContext("2d");
+        clear_canvas(ctx);
 
+        ctx.strokeStyle = '#2fff00';
+        ctx.lineWidth = 3;
+        ctx.borderRight = 3;
+
+        var imageObj = new Image();
+        imageObj.onload = function(){
+            var pattern = ctx.createPattern(imageObj, 'repeat');
+            ctx.rect(0, 0, ctx.width, ctx.height);
+            ctx.fillStyle = pattern;
+            ctx.fill();
+        };
+        imageObj.src = "img/back-1.jpg";
+
+        ctx.parallelogram(parseInt(posx), 1, parseInt(width_parallelogram), 810);
+        ctx.fill();
+        ctx.stroke();
+    }
+
+    function clear_canvas(ctx){
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+    }
+</script>
 </body>
 
+<script>
+    function getMousePos(canvas, evt) {
+        var rect = canvas.getBoundingClientRect();
+        return {
+            x: evt.clientX - rect.left,
+            y: evt.clientY - rect.top
+        };
+    }
+
+    var canvas = document.getElementById('canvas');
+    canvas.addEventListener('mousemove', function(evt) {
+        var mousePos = getMousePos(canvas, evt);
+        //var message = 'Mouse position: ' + mousePos.x + ',' + mousePos.y;
+        create_parallelogram(-280, mousePos.x*1.52);
+    }, false);
+</script>
+
+</html>

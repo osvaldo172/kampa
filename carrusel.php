@@ -166,12 +166,12 @@
 
 <div id="footer">
     <div class="row">
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-            <img src="img/footer/copyright.png">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 quita-padding">
+            <img src="img/footer/copyright.png" class="kampa-copy">
             <!--<p>KAMPA Copyright&copy</p>-->
         </div>
 
-        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6 quita-padding">
             <p class="pull-right">
                 <img src="img/footer/siguenos.png">
                 <img src="img/footer/FACEBOOK-ICONO.png" class="faceboock">

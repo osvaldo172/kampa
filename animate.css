@@ -3344,8 +3344,8 @@ Copyright (c) 2015 Daniel Eden
 
 
 .change-color{
-  animation: changeColor 5s forwards;
-  -webkit-animation: changeColor 5s forwards;
+  animation: changeColor 1s forwards;
+  -webkit-animation: changeColor 1s forwards;
   animation-timing-function: ease-in-out;  
   -webkit-animation-timing-function: ease-in-out;
 }

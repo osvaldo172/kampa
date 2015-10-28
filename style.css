@@ -203,7 +203,7 @@ html, body {
 
 .navbar-default .navbar-nav>li>a{
     color: #949494;
-    font-size: 12pt;
+    font-size: 11pt;
     font-family: bebasneue;
     /*font-family: robotoRegular;*/
 }
@@ -245,10 +245,10 @@ html, body {
 }
 
 #footer{
-    background-color: #000;
+    background-color: #1c1c1e;
     color: #1c1c1e;
     height: 27.5px;
-    padding: 5px 23px;
+    padding: 5px 30px;
 }
 
 #footer p{
@@ -271,6 +271,15 @@ html, body {
     background: -ms-linear-gradient(top, rgba(219,36,97,1) 0%, rgba(207,36,95,1) 100%);
     background: linear-gradient(to bottom, rgba(219,36,97,1) 0%, rgba(207,36,95,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db2461', endColorstr='#cf245f', GradientType=0 );
+}
+
+a.btn.btn-carrito{
+    padding: 12px 15px;
+    border-radius: 0px;
+}
+
+a.btn.btn-carrito img{
+    width: 100%;
 }
 
 .btn-carrito:hover{
@@ -296,13 +305,17 @@ html, body {
 }
 
 ul.nav.navbar-nav a{
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
 }
 
 .faceboock{
     position: absolute;
-    right: 40px;
-    padding-top: 1px;
+    right: 30px;
+    padding-top: 4px;
+}
+
+.quita-padding{
+    padding: 0;
 }
 
 
@@ -343,4 +356,12 @@ ul.nav.navbar-nav a{
 
 .shop-lion{
     margin-bottom: -5px;
+}
+
+p.pull-right{
+    margin: 0;
+}
+
+.kampa-copy{
+    margin-top: -5px;
 }

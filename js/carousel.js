@@ -40,9 +40,5 @@ $(document).on('ready',function(){
         }
     });
 
-    $('.carousel-indicators li').on('click', function() {
-        console.log("algo");
-        $('.carousel').carousel(parseInt(this.getAttribute('data-to')));
 
-    });
 });

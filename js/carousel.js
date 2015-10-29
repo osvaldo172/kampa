@@ -40,5 +40,11 @@ $(document).on('ready',function(){
         }
     });
 
+    $('.menu_href_slide_to li').on('click', function() {
+        $('.carousel').carousel(parseInt(this.getAttribute('data-to')));
+        $('.menu_href_slide_to li').removeClass("active");
+        $(this).addClass("active");
+    });
+
 
 });

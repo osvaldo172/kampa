@@ -11,23 +11,23 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'nocache_hash' => '282660324562d82e05c4f10-33750319',
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_562d82e0837894_47931935',
+  'unifunc' => 'content_56318384a9b2c3_32048166',
   'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_562d82e0837894_47931935')) {function content_562d82e0837894_47931935($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56318384a9b2c3_32048166')) {function content_56318384a9b2c3_32048166($_smarty_tpl) {?>
             <div class="row" 
                     >
             
                                                                                     <div class="widget col-lg-12 col-md-12 col-sm-12 col-xs-12 col-sp-12"
                             >
                                                                                                  
- <div id="leomanulogocarousel1278304187" class="widget-manufacture block">
+ <div id="leomanulogocarousel115085956" class="widget-manufacture block">
 		<div class="block_content">
-		<div class="carousel slide" id="manucarousel_leomanulogocarousel1278304187">
+		<div class="carousel slide" id="manucarousel_leomanulogocarousel115085956">
 				 
-				<a class="carousel-control left" href="#manucarousel_leomanulogocarousel1278304187" data-slide="prev">&lsaquo;</a>
-				<a class="carousel-control right" href="#manucarousel_leomanulogocarousel1278304187" data-slide="next">&rsaquo;</a>
+				<a class="carousel-control left" href="#manucarousel_leomanulogocarousel115085956" data-slide="prev">&lsaquo;</a>
+				<a class="carousel-control right" href="#manucarousel_leomanulogocarousel115085956" data-slide="next">&rsaquo;</a>
 						<div class="carousel-inner">
 													<div class="item active">
 																					<div class="row">
@@ -92,7 +92,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 
 <script type="text/javascript">
 $(document).ready(function() {
-	$('#leomanulogocarousel1278304187').carousel({
+	$('#leomanulogocarousel115085956').carousel({
 		pause: 'hover',
 		interval: 0
 	});

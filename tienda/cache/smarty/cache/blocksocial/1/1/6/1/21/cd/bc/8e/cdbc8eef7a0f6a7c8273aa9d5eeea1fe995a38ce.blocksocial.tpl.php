@@ -10,23 +10,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     ),
   ),
   'nocache_hash' => '1610663051562d82e0cc4259-14997970',
-  'variables' => 
-  array (
-    'facebook_url' => 0,
-    'google_plus_url' => 0,
-    'twitter_url' => 0,
-    'rss_url' => 0,
-    'youtube_url' => 0,
-    'pinterest_url' => 0,
-    'vimeo_url' => 0,
-    'instagram_url' => 0,
-  ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_562d82e0d42372_57652814',
+  'unifunc' => 'content_56318384be7798_09635332',
+  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_562d82e0d42372_57652814')) {function content_562d82e0d42372_57652814($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56318384be7798_09635332')) {function content_56318384be7798_09635332($_smarty_tpl) {?>
 <div id="social_block" class="block">
 	 <h4 class="title_block">Get social</h4>
 	 <div class="block_content">	 	

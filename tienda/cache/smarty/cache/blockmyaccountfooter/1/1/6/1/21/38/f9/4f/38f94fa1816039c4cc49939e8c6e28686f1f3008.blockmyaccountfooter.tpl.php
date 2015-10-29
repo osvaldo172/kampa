@@ -10,20 +10,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     ),
   ),
   'nocache_hash' => '1885141605562d82e367c275-82561002',
-  'variables' => 
-  array (
-    'link' => 0,
-    'returnAllowed' => 0,
-    'voucherAllowed' => 0,
-    'HOOK_BLOCK_MY_ACCOUNT' => 0,
-    'is_logged' => 0,
-  ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_562d82e36d31d5_07962451',
+  'unifunc' => 'content_56318386a4b6c4_57770467',
+  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_562d82e36d31d5_07962451')) {function content_562d82e36d31d5_07962451($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56318386a4b6c4_57770467')) {function content_56318386a4b6c4_57770467($_smarty_tpl) {?>
 <!-- Block myaccount module -->
 <div class="footer-block block">
 	<h4 class="title_block">Mi cuenta</h4>

@@ -19,48 +19,6 @@
 <body>
 
 
-<div class="logo">
-    <img src="img/logo.png">
-</div>
-
-<div id="project-carousel-first carousel-indicators carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
-
-    <ol class="carousel-indicators">
-        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic"  data-to="0" class="active slider-circles"></li>
-        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic" class="slider-circles" data-to="1"></li>
-        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic" class="slider-circles" data-to="2"></li>
-        <li data-target="#project-carousel-first #carousel-indicators #carousel-example-generic" class="slider-circles" data-to="3"></li>
-    </ol>
-
-    <div class="carousel-inner">
-        <div class="item active animated fadeIn">
-            <div class="shop-lion">
-                <img src="img/back-2.jpg" class="lion">
-                <canvas id="canvas" width="1285" height="804" class="shop"></canvas>
-            </div>
-            <!--<div class="contenedor">
-                <div class="contenedorHijo">
-                    <div class="contenidoHijoInterior"></div>
-                </div>
-            </div>
-
-            <div class="contenedor2">
-            </div>-->
-        </div>
-
-        <div class="animated fadeIn item">
-            <img src="img/riel/back2.jpg">
-        </div>
-
-        <div class="animated fadeIn item">
-            <img src="img/riel/back3.jpg">
-        </div>
-
-        <div class="animated fadeIn item">
-            <img src="img/riel/back4.jpg">
-        </div>
-    </div>
-</div>
 
 <nav class="navbar navbar-default menu">
     <div class="menu-aux">
@@ -79,23 +37,30 @@
 
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-                <li class="active"><a href="#">KAMPA</a></li>
-                <li><a href="#">LIGHT IN THE DARKNESS</a></li>
-                <li><a href="#">LETHAL VIPER</a></li>
-                <li><a href="#">SUPERLIGHT</a></li>
-                <li><a href="#">CLASSIC GOLDEN</a></li>
-                <li><a href="#">ELITE</a></li>
+            <ul class="nav navbar-nav menu_href_slide_to">
+                <!-- <li class=""><a href="#">KAMPA</a></li> -->
+                <li data-to="0" class="active"><a href="#">LIGHT IN THE DARKNESS</a></li>
+                <li data-to="1"><a href="">LETHAL VIPER</a></li>
+                <li data-to="2"><a href="#">SUPERLIGHT</a></li>
+                <li data-to="3"><a href="#">CLASSIC GOLDEN</a></li>
+                <li data-to="4"><a href="#">ELITE</a></li>
                 <li><a href="#">ROPA</a></li>
-                <li><a href="#">TIENDA</a></li>
+                <li><a href="tienda">TIENDA</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
 </nav>
 
-<div id="project-carousel-second" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="project-carousel-second" class="carousel slide" data-ride="carousel">
 
+<!--     <ol class="carousel-indicators">
+        <li data-target="#project-carousel-second"  data-slide-to="0" class="active slider-circles"></li>
+        <li data-target="#project-carousel-second" class="slider-circles" data-slide-to="1"></li>
+        <li data-target="#project-carousel-second" class="slider-circles" data-slide-to="2"></li>
+        <li data-target="#project-carousel-second" class="slider-circles" data-slide-to="3"></li>
+    </ol> -->
     <!-- Wrapper for slides -->
+
     <div class="carousel-inner">
         <div class="item active shoes-carousel">
             <img class="animated bounceInRight" src="img/calzado/light_in_the_darkness.png" alt="placeholder">
@@ -156,10 +121,10 @@
     </div>
 
     <!-- Controls -->
-    <a class="left carousel-control" href="[id*=project-carousel]" data-slide="prev">
+    <a class="left carousel-control" href="#project-carousel-second" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
-    <a class="right carousel-control" href="[id*=project-carousel]" data-slide="next">
+    <a class="right carousel-control" href="#project-carousel-second" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
 </div>
@@ -180,6 +145,12 @@
         </div>
     </div>
 </div>
+<script type="text/javascript">
+    $(document).ready(function(){
+        $('.carousel').carousel()
+
+    })
+</script>
 <script type="text/javascript">
     if(document.getElementById("canvas").getContext){
         create_parallelogram(-100, 810);

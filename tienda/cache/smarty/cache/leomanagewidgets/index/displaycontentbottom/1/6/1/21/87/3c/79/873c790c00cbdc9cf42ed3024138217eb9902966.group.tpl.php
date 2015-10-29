@@ -11,11 +11,11 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'nocache_hash' => '282660324562d82e05c4f10-33750319',
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_562d82e0a75ab7_67208401',
+  'unifunc' => 'content_56318384b4c373_11471215',
   'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_562d82e0a75ab7_67208401')) {function content_562d82e0a75ab7_67208401($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56318384b4c373_11471215')) {function content_56318384b4c373_11471215($_smarty_tpl) {?>
             <div class="row" 
                     >
             
@@ -30,12 +30,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
                                                                                     </div>
                                                                                 <div class="widget col-lg-4 col-md-4 col-sm-4 col-xs-12 col-sp-12"
                             >
-                                                                                                <div id="custhtmlcarosel558234295" class="block">
+                                                                                                <div id="custhtmlcarosel2044009570" class="block">
         <h4 class="title_block">
         Gallery
     </h4>
-        	<a class="carousel-control left" href="#custhtmlcarosel558234295"   data-slide="prev"></a>
-	<a class="carousel-control right" href="#custhtmlcarosel558234295"  data-slide="next"></a>
+        	<a class="carousel-control left" href="#custhtmlcarosel2044009570"   data-slide="prev"></a>
+	<a class="carousel-control right" href="#custhtmlcarosel2044009570"  data-slide="next"></a>
         <div class="carousel-inner">
             <div class="item item active"><div class="gallery-carousel"><a href=" "> <img src="/kampa/tienda/themes/leo_converse/img/modules/leomanagewidgets/img_carousel1.jpg" alt="" /></a>
 <div class="gallery-detail">
@@ -55,7 +55,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <script type="text/javascript">
 
 $(document).ready(function() {
-    $('#custhtmlcarosel558234295').each(function(){
+    $('#custhtmlcarosel2044009570').each(function(){
         $(this).carousel({
             pause: true,
             interval: false

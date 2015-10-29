@@ -219,6 +219,12 @@ html, body {
     color: #2fff00;
 }
 
+.navbar-default .menu_href_slide_to>.active>a, .navbar-default .menu_href_slide_to>.active>a:hover {
+    background-image: none !important;
+    color: #2fff00;
+    background-color: #000 !important;
+}
+
 .glyphicon-chevron-left:before{
     content: url("img/FLECHA-VERDE.png");
 }
@@ -364,4 +370,9 @@ p.pull-right{
 
 .kampa-copy{
     margin-top: -5px;
+}
+
+.navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
+    background-color: transparent;
+    color: #2fff00;
 }

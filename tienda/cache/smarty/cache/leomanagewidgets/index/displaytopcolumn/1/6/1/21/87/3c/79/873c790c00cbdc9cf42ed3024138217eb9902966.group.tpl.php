@@ -11,19 +11,19 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'nocache_hash' => '282660324562d82e05c4f10-33750319',
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_562d82e3dc1cc0_24235624',
+  'unifunc' => 'content_56318386cae8e4_09276562',
   'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_562d82e3dc1cc0_24235624')) {function content_562d82e3dc1cc0_24235624($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56318386cae8e4_09276562')) {function content_56318386cae8e4_09276562($_smarty_tpl) {?>
             <div class="row" 
                     >
             
                                                                                     <div class="widget col-lg-12 col-md-12 col-sm-12 col-xs-12 col-sp-12"
                             >
-                                                                                                <div id="custhtmlcarosel87155632" class="carousel slide carousel-fade">
-        	<a class="carousel-control left" href="#custhtmlcarosel87155632"   data-slide="prev"></a>
-	<a class="carousel-control right" href="#custhtmlcarosel87155632"  data-slide="next"></a>
+                                                                                                <div id="custhtmlcarosel963703882" class="carousel slide carousel-fade">
+        	<a class="carousel-control left" href="#custhtmlcarosel963703882"   data-slide="prev"></a>
+	<a class="carousel-control right" href="#custhtmlcarosel963703882"  data-slide="next"></a>
         <div class="carousel-inner">
             <div class="item item active"><p><img src="/kampa/tienda/themes/leo_converse/img/modules/leomanagewidgets/sample-1.jpg" alt="" /></p>
 <div class="caption">
@@ -46,7 +46,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
 <script type="text/javascript">
 
 $(document).ready(function() {
-    $('#custhtmlcarosel87155632').each(function(){
+    $('#custhtmlcarosel963703882').each(function(){
         $(this).carousel({
             pause: true,
             interval: false

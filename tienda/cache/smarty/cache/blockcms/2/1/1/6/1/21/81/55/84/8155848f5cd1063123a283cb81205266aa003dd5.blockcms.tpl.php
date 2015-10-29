@@ -10,33 +10,12 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     ),
   ),
   'nocache_hash' => '980962606562d82e3499383-53824534',
-  'variables' => 
-  array (
-    'block' => 0,
-    'cms_titles' => 0,
-    'cms_key' => 0,
-    'cms_title' => 0,
-    'cms_page' => 0,
-    'link' => 0,
-    'show_price_drop' => 0,
-    'PS_CATALOG_MODE' => 0,
-    'show_new_products' => 0,
-    'show_best_sales' => 0,
-    'display_stores_footer' => 0,
-    'show_contact' => 0,
-    'contact_url' => 0,
-    'cmslinks' => 0,
-    'cmslink' => 0,
-    'show_sitemap' => 0,
-    'display_poweredby' => 0,
-    'footer_text' => 0,
-  ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
-  'unifunc' => 'content_562d82e3566428_61972101',
+  'unifunc' => 'content_56318386976730_32357879',
+  'has_nocache_code' => false,
   'cache_lifetime' => 31536000,
 ),true); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_562d82e3566428_61972101')) {function content_562d82e3566428_61972101($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_56318386976730_32357879')) {function content_56318386976730_32357879($_smarty_tpl) {?>
 	<!-- Block CMS module footer -->
 	<div class="footer-block block" id="block_various_links_footer">
 		<h4 class="title_block">Información</h4>

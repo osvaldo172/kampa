@@ -3268,8 +3268,8 @@ Copyright (c) 2015 Daniel Eden
 
 @keyframes changeColor {
   0%   { background-color: rgba(240,240,240,1); }
-  100%  {       
-      background: rgba(41,253,75,1);     
+  100%  {
+      background: rgba(41,253,75,1);
    }
   /*100% { background-color: #FFFFFF; }*/
 
@@ -3281,27 +3281,27 @@ Copyright (c) 2015 Daniel Eden
       background: -o-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: -ms-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: linear-gradient(to bottom, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9', GradientType=0 );      
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9', GradientType=0 );
     }
     10%{
-      background: #2afd7e; 
+      background: #2afd7e;
       background: -moz-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(240,240,240,1)), color-stop(100%, rgba(249,249,249,1)));
       background: -webkit-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: -o-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: -ms-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: linear-gradient(to bottom, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9', GradientType=0 );            
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9', GradientType=0 );
     }
     20%{
-      background: #2afd77;      
+      background: #2afd77;
       background: -moz-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(240,240,240,1)), color-stop(100%, rgba(249,249,249,1)));
       background: -webkit-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: -o-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: -ms-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: linear-gradient(to bottom, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9', GradientType=0 );       
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9', GradientType=0 );
     }
     30%{
       background: #2afd6b;
@@ -3311,7 +3311,7 @@ Copyright (c) 2015 Daniel Eden
       background: -o-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: -ms-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: linear-gradient(to bottom, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9', GradientType=0 );       
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9', GradientType=0 );
     }
     40%{
       background: #29fd4b;
@@ -3321,8 +3321,8 @@ Copyright (c) 2015 Daniel Eden
       background: -o-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: -ms-linear-gradient(top, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
       background: linear-gradient(to bottom, rgba(240,240,240,1) 0%, rgba(249,249,249,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9', GradientType=0 );       
-    }    
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f0f0f0', endColorstr='#f9f9f9', GradientType=0 );
+    }
     100% {
       z-index: -1000;
       background: rgba(41,253,75,1);
@@ -3332,8 +3332,8 @@ Copyright (c) 2015 Daniel Eden
       background: -o-linear-gradient(top, rgba(41,253,75,1) 0%, rgba(43,253,175,1) 100%);
       background: -ms-linear-gradient(top, rgba(41,253,75,1) 0%, rgba(43,253,175,1) 100%);
       background: linear-gradient(to bottom, rgba(41,253,75,1) 0%, rgba(43,253,175,1) 100%);
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29fd4b', endColorstr='#2bfdaf', GradientType=0 );      
-    } */   
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#29fd4b', endColorstr='#2bfdaf', GradientType=0 );
+    } */
 
 }
 
@@ -3343,9 +3343,56 @@ Copyright (c) 2015 Daniel Eden
 }
 
 
-.change-color{
+/*.change-color{
   animation: changeColor 1s forwards;
   -webkit-animation: changeColor 1s forwards;
-  animation-timing-function: ease-in-out;  
+  animation-timing-function: ease-in-out;
   -webkit-animation-timing-function: ease-in-out;
+}*/
+
+
+.carousel.carousel-fade .item {
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -ms-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    opacity:0;
 }
+
+.carousel.carousel-fade .active.item {
+    opacity:1;
+}
+
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.carousel.carousel-fade .next,
+.carousel.carousel-fade .prev {
+    left: 0;
+    z-index: 1;
+}
+
+.carousel.carousel-fade .carousel-control {
+    z-index: 3;
+}
+
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right, .carousel-control .icon-next, .carousel-control .icon-prev{
+    margin-top: -265px;
+}
+
+a.left.carousel-control{
+    margin-left: 6%;
+}
+
+span.glyphicon.glyphicon-chevron-right{
+    margin-right: 40%;
+}
+
+/*1242*/

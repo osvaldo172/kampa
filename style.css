@@ -20,12 +20,13 @@
 
 h1{
     font-family: "bebasneue";
-    font-size: 119.5pt;
+    font-size: 88.5pt;
+    color: #000;
 }
 
 p{
     font-family: robotoRegular;
-    font-size: 19pt;
+    font-size: 14pt;
 }
 
 html, body {
@@ -90,11 +91,11 @@ html, body {
 }
 
 .gold{
-    color: #9e7900;
+    color: #9e7912;
 }
 
 .yellow{
-    color: #fafa07;
+    color: #fbfb00;
 }
 
 .white{
@@ -159,8 +160,8 @@ html, body {
 }
 
 .description-shoes{
-    margin-top: -95px;
-    padding-top: 100px;
+    margin-top: -78px;
+    padding-top: 80px;
     padding-bottom: 40px;
 }
 
@@ -189,6 +190,7 @@ html, body {
     margin-bottom: 0px;
     min-height: 63px;
     padding: 7px 20px 0 20px;
+    margin-top: -10px;
 }
 
 .navbar .navbar-nav {
@@ -204,7 +206,7 @@ html, body {
 .navbar-default .navbar-nav>li>a{
     color: #949494;
     font-size: 11pt;
-    font-family: bebasneue;
+    font-family: bebaskai-regular;
     /*font-family: robotoRegular;*/
 }
 
@@ -242,7 +244,7 @@ html, body {
 }
 
 .shoes-carousel img{
-    width: 80%;
+    width: 69%;
     display: initial !important;
 }
 
@@ -251,7 +253,7 @@ html, body {
 }
 
 #footer{
-    background-color: #1c1c1e;
+    background-color: #202021;
     color: #1c1c1e;
     height: 27.5px;
     padding: 5px 30px;
@@ -282,6 +284,8 @@ html, body {
 a.btn.btn-carrito{
     padding: 12px 15px;
     border-radius: 0px;
+    margin-top: 37px;
+    margin-bottom: 17px;
 }
 
 a.btn.btn-carrito img{
@@ -317,7 +321,7 @@ ul.nav.navbar-nav a{
 .faceboock{
     position: absolute;
     right: 30px;
-    padding-top: 4px;
+    padding-top: 2px;
 }
 
 .quita-padding{
@@ -333,7 +337,7 @@ ul.nav.navbar-nav a{
 .logo-menu{
     position: absolute;
     padding-left: 8px;
-    padding-top: 3px;
+    padding-top: 13px;
     visibility: visible;
 }
 
@@ -375,4 +379,92 @@ p.pull-right{
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:focus, .navbar-default .navbar-nav>.active>a:hover{
     background-color: transparent;
     color: #2fff00;
+}
+
+p.animated.bounceInLeft{
+    margin-top: -8px;
+    padding: 0 154px;
+}
+
+.carousel-indicators li{
+    height: 8px;
+    width: 8px;
+}
+
+.carousel-indicators .active{
+    height: 10px;
+    width: 10px;
+}
+
+.menu-slider{
+    padding-top: 8px;
+}
+
+.alinea-text{
+    margin-top: -14px;
+}
+
+.container-small{
+    padding: 0 230px !important;
+}
+
+.color-blanco{
+    color: #fff;
+}
+
+.text-classic-golden{
+    color: #808080
+}
+
+.carousel-indicators .active{
+    margin: 0 4px;
+}
+
+.carousel-indicators li{
+    margin: 0 4px;
+}
+
+.btn-tienda{
+    font-size: 14.5px;
+    font-family: robotoBold;
+    margin-top: 35px;
+    transform: skew(-30deg);
+    background: #fbfb00;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#db2461', endColorstr='#cf245f', GradientType=0 );
+    padding: 12px 15px;
+    border-radius: 0px;
+    margin-top: 37px;
+    margin-bottom: 17px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+.btn-tienda:hover{
+    background: #f4ed00;
+}
+
+a.btn.btn-tienda p{
+    color: #000;
+    transform: skew(30deg);
+
+    margin-bottom: 1px;
+    padding-left: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+a.btn.btn-tienda {
+    position: absolute;
+    z-index: 9999;
+    top: 6%;
+    right: -21px;
+    width: 19%;
+    text-align: center;
+    padding-left: 40px;
+}
+
+.btn-tienda2{
+    top: 61% !important;
 }

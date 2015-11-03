@@ -31,16 +31,17 @@
         ctx.lineWidth = 3;
         ctx.borderRight = 3;
 
-        var imageObj = new Image();
+        var imageObj = new Image(100, 200);
         imageObj.onload = function(){
             var pattern = ctx.createPattern(imageObj, 'repeat');
-            ctx.rect(0, 0, ctx.width, ctx.height);
+            //ctx.rect(0, 0, ctx.width, ctx.height);
             ctx.fillStyle = pattern;
             ctx.fill();
         };
         imageObj.src = "img/back-1.jpg";
+        imageObj.width = 25;
 
-        ctx.parallelogram(parseInt(posx), 1, parseInt(width_parallelogram), 800);
+        //ctx.parallelogram(parseInt(posx), 1, parseInt(width_parallelogram), 800);
         ctx.fill();
         ctx.stroke();
     }

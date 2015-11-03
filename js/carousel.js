@@ -23,15 +23,19 @@ $(document).on('ready',function(){
 
     }
 
-    $('.carousel').carousel({
+    $('.carousel2').carousel({
         pause: true,
         interval: false
+    });
+
+    $('#myCarousel').carousel({
+        interval: 5000
     });
 
 
 
     $( window ).scroll(function() {
-        if($("body").scrollTop()>=770){
+        if($("body").scrollTop()>=799){
             $(".menu").addClass("menu-fixed");
             $(".menu-aux").removeClass("escode-menu");
             $(".menu-slider-aux").addClass("menu-slider");

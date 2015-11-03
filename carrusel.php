@@ -17,9 +17,9 @@
 
 <body>
 
+<img src="img/logo.png" class="img-logo">
 
 <div class="logo">
-    <img src="img/logo.png">
 </div>
 
 <div id="myCarousel" class="carousel" data-ride="carousel">
@@ -94,9 +94,7 @@
 </div>-->
 
 <nav class="navbar navbar-default menu">
-    <div class="menu-aux escode-menu">
-        <img src="img/logo.png" class="logo-menu">
-    </div>
+
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -124,7 +122,7 @@
     </div><!-- /.container-fluid -->
 </nav>
 
-<div id="project-carousel-second" class="carousel slide carousel-fade" data-ride="carousel">
+<div id="project-carousel-second" class="carousel carousel2 slide carousel-fade" data-ride="carousel">
 
     <!--     <ol class="carousel-indicators">
             <li data-target="#project-carousel-second"  data-slide-to="0" class="active slider-circles"></li>
@@ -219,6 +217,7 @@
         </div>
     </div>
 </div>
+
 <script type="text/javascript">
     if(document.getElementById("canvas").getContext){
         create_parallelogram(-100, 810, $(".lion").height());
@@ -238,6 +237,87 @@
         var imageObj = new Image();
 
         imageObj.src='img/back-1.jpg';
+        if(window.innerWidth>1266){
+            console.log("entro 1");
+            imageObj.src='img/back-1.jpg';
+        }else if(window.innerWidth<=1266 && window.innerWidth>1246){
+            console.log("entro 2");
+            imageObj.src='canvas/back-1266.jpg';
+
+        }else if(window.innerWidth<=1246 && window.innerWidth>1226){
+            console.log("entro 3");
+            imageObj.src='canvas/back-1246.jpg';
+
+        }else if(window.innerWidth<=1226 && window.innerWidth>1206){
+            console.log("entro 4");
+            imageObj.src='canvas/back-1226.jpg';
+
+        }else if(window.innerWidth<=1206 && window.innerWidth>1166){
+            console.log("entro 5");
+            imageObj.src='canvas/back-1206.jpg';
+
+        }else if(window.innerWidth<=1186 && window.innerWidth>1146){
+            console.log("entro 6");
+            imageObj.src='canvas/back-1186.jpg';
+
+        }else if(window.innerWidth<=1166 && window.innerWidth>1146){
+            console.log("entro 7");
+            imageObj.src='canvas/back-1166.jpg';
+
+        }else if(window.innerWidth<=1146 && window.innerWidth>1126){
+            console.log("entro 8");
+            imageObj.src='canvas/back-1146.jpg';
+
+        }else if(window.innerWidth<=1126 && window.innerWidth>1106){
+            console.log("entro 9");
+            imageObj.src='canvas/back-1126.jpg';
+
+        }else if(window.innerWidth<=1106 && window.innerWidth>1086){
+            console.log("entro 10");
+            imageObj.src='canvas/back-1106.jpg';
+
+        }else if(window.innerWidth<=1086 && window.innerWidth>1066){
+            console.log("entro 11");
+            imageObj.src='canvas/back-1086.jpg';
+
+        }else if(window.innerWidth<=1066 && window.innerWidth>1046){
+            console.log("entro 12");
+            imageObj.src='canvas/back-1066.jpg';
+
+        }else if(window.innerWidth<=1046 && window.innerWidth>1026){
+            console.log("entro 13");
+            imageObj.src='canvas/back-1046.jpg';
+
+        }else if(window.innerWidth<=1026 && window.innerWidth>1006){
+            console.log("entro 14");
+            imageObj.src='canvas/back-1026.jpg';
+
+        }else if(window.innerWidth<=1006 && window.innerWidth>986){
+            console.log("entro 15");
+            imageObj.src='canvas/back-1006.jpg';
+
+        }else if(window.innerWidth<=986 && window.innerWidth>966){
+            console.log("entro 16");
+            imageObj.src='canvas/back-986.jpg';
+
+        }else if(window.innerWidth<=966 && window.innerWidth>946){
+            console.log("entro 17");
+            imageObj.src='canvas/back-966.jpg';
+
+        }else if(window.innerWidth<=946 && window.innerWidth>926){
+            console.log("entro 18");
+            imageObj.src='canvas/back-946.jpg';
+
+        }else if(window.innerWidth<=926 && window.innerWidth>906){
+            console.log("entro 19");
+            imageObj.src='canvas/back-926.jpg';
+
+        }else{
+            console.log("entro else");
+            imageObj.src='canvas/back-926.jpg';
+        }
+
+        //imageObj.src=$("#super").attr("src");
         imageObj.onload = function(){
             var pattern = ctx.createPattern(imageObj, 'no-repeat');
             ctx.rect(0, 0, ctx.width, ctx.height);

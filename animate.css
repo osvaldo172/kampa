@@ -1170,6 +1170,7 @@ Copyright (c) 2015 Daniel Eden
 .fadeIn {
   -webkit-animation-name: fadeIn;
   animation-name: fadeIn;
+    animation-duration: 4s;
 }
 
 @-webkit-keyframes fadeInDown {
@@ -3396,3 +3397,4 @@ span.glyphicon.glyphicon-chevron-right{
 }
 
 /*1242*/
+

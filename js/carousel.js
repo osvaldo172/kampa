@@ -29,7 +29,7 @@ $(document).on('ready',function(){
     });
 
     $('#myCarousel').carousel({
-        interval: 5000
+        interval: 10000
     });
 
 
@@ -57,8 +57,10 @@ $(document).on('ready',function(){
     });
 
     jQuery('#project-carousel-second').carousel({
-        interval: 7000
-    })
+        interval: 10000
+    });
+
+
 
 
 });

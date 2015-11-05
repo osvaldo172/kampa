@@ -17,12 +17,13 @@
 
 <body>
 
-<img src="img/logo.png" class="img-logo">
+<!--<a href="http://kampapremier.com/tienda"> <img src="img/logo.png" class="img-logo"></a>-->
+<a href="#"> <img src="img/logo-g.png" class="img-logo"></a>
 
 <div class="logo">
 </div>
 
-<div id="myCarousel" class="carousel" data-ride="carousel">
+<div id="myCarousel" class="carousel carousel-fade" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -42,14 +43,14 @@
             </div>
 
             <div class="animated fadeIn item">
-                <a class="btn btn-tienda" href="#" role="button">
+                <a class="btn btn-tienda" href="http://kampapremier.com/tienda" role="button">
                     <p>IR A TIENDA</p>
                 </a>
                 <img src="img/riel/back2.jpg">
             </div>
 
             <div class="animated fadeIn item">
-                <a class="btn btn-tienda btn-tienda2" href="#" role="button">
+                <a class="btn btn-tienda btn-tienda2" href="http://kampapremier.com/tienda" role="button">
                     <p>IR A TIENDA</p>
                 </a>
                 <img src="img/riel/back3.jpg">
@@ -115,8 +116,8 @@
                 <li data-to="2"><a href="#">SUPERLIGHT</a></li>
                 <li data-to="3"><a href="#">CLASSIC GOLDEN</a></li>
                 <li data-to="4"><a href="#">ELITE</a></li>
-                <li><a href="#">ROPA</a></li>
-                <li><a href="tienda">TIENDA</a></li>
+                <li><a href="http://kampapremier.com/tienda">ROPA</a></li>
+                <li><a href="http://kampapremier.com/tienda">TIENDA</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -189,6 +190,21 @@
                 </div>
             </div>
         </div>
+        <div class="item shoes-carousel">
+            <img class="animated bounceInRight" src="img/calzado/elite.png" alt="placeholder">
+            <div class="bg-black description-shoes">
+                <div class="container alinea-text">
+                    <h1 class="text-center gold animated white bounceInLeft">
+                        ELITE
+                    </h1>
+                    <p class="animated bounceInLeft container-small white">
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias.
+                    </p>
+                    <a class="btn btn-carrito" href="#" role="button"><img src="img/carrito.png"></a>
+                </div>
+            </div>
+        </div>
+
     </div>
 
     <!-- Controls -->
@@ -316,6 +332,8 @@
             console.log("entro else");
             imageObj.src='canvas/back-926.jpg';
         }
+
+        imageObj.src='tienda.jpg';
 
         //imageObj.src=$("#super").attr("src");
         imageObj.onload = function(){

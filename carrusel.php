@@ -3,12 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <title>Kampa The Control</title>
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js" type="text/javascript"></script>
+
+
+
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+    <script src="//code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/carousel.js" ></script>
     <script src="./parallelogram.js"></script>
+
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" type="text/css" href="style.less">
     <link rel="stylesheet" type="text/css" href="animate.css">
@@ -23,23 +30,71 @@
 <div class="logo">
 </div>
 
-<div id="myCarousel" class="carousel carousel-fade" data-ride="carousel">
-    <!-- Indicators -->
+<div id="carousel_fade" class="carousel slide carousel-fade">
+    <ol class="carousel-indicators">
+        <li data-target="#carousel_fade" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel_fade" data-slide-to="1"></li>
+        <li data-target="#carousel_fade" data-slide-to="2"></li>
+        <li data-target="#carousel_fade" data-slide-to="3"></li>
+        <li data-target="#carousel_fade" data-slide-to="4"></li>
+    </ol>
+    <div class="carousel-inner">
+
+        <div class="item active">
+            <img src="img/back-2.jpg">
+        </div>
+
+        <div class="item">
+            <img src="img/back-1.jpg">
+        </div>
+
+        <div class="item">
+            <a class="btn btn-tienda" href="http://kampapremier.com/tienda" role="button">
+                <p>IR A TIENDA</p>
+            </a>
+            <img src="img/riel/back2.jpg">
+        </div>
+
+        <div class="item">
+            <a class="btn btn-tienda btn-tienda2" href="http://kampapremier.com/tienda" role="button">
+                <p>IR A TIENDA</p>
+            </a>
+            <img src="img/riel/back3.jpg">
+        </div>
+
+        <div class="item">
+            <img src="img/riel/back4.jpg">
+        </div>
+
+    </div>
+    <!--<a class="carousel-control left btn-control " href="#carousel_fade" data-slide="prev">‹</a>
+    <a class="carousel-control right btn-control" href="#carousel_fade" data-slide="next">›</a>-->
+</div>
+
+
+<!--<div id="myCarousel" class="carousel carousel-fade" data-ride="carousel">
     <ol class="carousel-indicators">
         <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
         <li data-target="#myCarousel" data-slide-to="1"></li>
         <li data-target="#myCarousel" data-slide-to="2"></li>
         <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
     </ol>
-
-    <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
         <div class="carousel-inner">
-            <div class="item active animated fadeIn">
+            <!--<div class="item active animated fadeIn">
                 <div class="shop-lion" id="main">
                     <img src="img/back-2.jpg" class="lion">
                     <canvas id="canvas" width="1285" height="804" class="shop"></canvas>
                 </div>
+            </div>-->
+
+         <!--   <div class="animated fadeIn item active">
+                <img src="img/back-2.jpg">
+            </div>
+
+            <div class="animated fadeIn item">
+                <img src="img/back-1.jpg">
             </div>
 
             <div class="animated fadeIn item">
@@ -61,7 +116,7 @@
             </div>
         </div>
     </div>
-</div>
+</div>-->
 
 <!--<div id="myCarousel" class="carousel2 slide carousel-fade" data-ride="carousel1">
 
@@ -99,10 +154,8 @@
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" onclick="activeMenu()" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
         </div>
@@ -111,13 +164,13 @@
         <div class="collapse navbar-collapse menu-slider-aux" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav menu_href_slide_to">
                 <!-- <li class=""><a href="#">KAMPA</a></li> -->
-                <li data-to="0" class="active"><a href="#">LIGHT IN THE DARKNESS</a></li>
-                <li data-to="1"><a href="#">LETHAL VIPER</a></li>
-                <li data-to="2"><a href="#">SUPERLIGHT</a></li>
-                <li data-to="3"><a href="#">CLASSIC GOLDEN</a></li>
-                <li data-to="4"><a href="#">ELITE</a></li>
-                <li><a href="http://kampapremier.com/tienda">ROPA</a></li>
-                <li><a href="http://kampapremier.com/tienda">TIENDA</a></li>
+                <li data-to="0" class="aux-li active"><a href="#">LIGHT IN THE DARKNESS</a></li>
+                <li data-to="1" class="aux-li"><a href="#">SUPERLIGHT</a></li>
+                <li data-to="2" class="aux-li"><a href="#">LETHAL VIPER</a></li>
+                <li data-to="3" class="aux-li"><a href="#">CLASSIC GOLDEN</a></li>
+                <li data-to="4" class="aux-li"><a href="#">ELITE</a></li>
+                <!--<li><a href="http://kampapremier.com/tienda">ROPA</a></li>-->
+                <li onclick="irTienda()"><a href="http://kampapremier.com/tienda">TIENDA</a></li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
@@ -135,41 +188,28 @@
 
     <div class="carousel-inner">
         <div class="item active shoes-carousel">
-            <img class="animated bounceInRight" src="img/calzado/light_in_the_darkness.png" alt="placeholder">
-            <div class="description-shoes bg-verde-azul">
+            <img class="animated shoes-img bounceInRight" src="img/calzado/superlight.png" alt="placeholder">
+            <div class="bg-naranja description-shoes">
                 <div class="container alinea-text">
-                    <h1 class="text-center animated bounceInLeft">
+                    <h1 class="text-center yellow animated text-shoes bounceInLeft">
                         LIGHT IN THE DARKNESS
                     </h1>
-                    <p class="animated bounceInLeft">
+                    <p class="animated text-shoes bounceInLeft">
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500.
                     </p>
                     <a class="btn btn-carrito" href="#" role="button"><img src="img/carrito.png"></a>
                 </div>
             </div>
+
         </div>
         <div class="item shoes-carousel">
-            <img class="animated bounceInRight" src="img/calzado/lethal_viper.png" alt="placeholder">
-            <div class="bg-azul description-shoes">
+            <img class="animated shoes-img bounceInRight" id="algo" src="img/calzado/light_in_the_darkness.png" alt="placeholder">
+            <div class="description-shoes bg-verde-azul">
                 <div class="container alinea-text">
-                    <h1 class="text-center white animated bounceInLeft">
-                        LETHAL VIPER
-                    </h1>
-                    <p class="animated bounceInLeft color-blanco container-small">
-                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias.
-                    </p>
-                    <a class="btn btn-carrito" href="#" role="button"><img src="img/carrito.png"></a>
-                </div>
-            </div>
-        </div>
-        <div class="item shoes-carousel">
-            <img class="animated bounceInRight" src="img/calzado/superlight.png" alt="placeholder">
-            <div class="bg-naranja description-shoes">
-                <div class="container alinea-text">
-                    <h1 class="text-center yellow animated bounceInLeft">
+                    <h1 class="text-center animated text-shoes bounceInLeft">
                         SUPERLIGHT
                     </h1>
-                    <p class="animated bounceInLeft container-small">
+                    <p class="animated text-shoes bounceInLeft container-small">
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias.
                     </p>
                     <a class="btn btn-carrito" href="#" role="button"><img src="img/carrito.png"></a>
@@ -177,13 +217,27 @@
             </div>
         </div>
         <div class="item shoes-carousel">
-            <img class="animated bounceInRight" src="img/calzado/classic_golden.png" alt="placeholder">
+            <img class="animated shoes-img bounceInRight" src="img/calzado/lethal_viper.png" alt="placeholder">
+            <div class="bg-azul description-shoes">
+                <div class="container alinea-text">
+                    <h1 class="text-center white animated text-shoes bounceInLeft">
+                        LETHAL VIPER
+                    </h1>
+                    <p class="animated text-shoes bounceInLeft color-blanco container-small">
+                        Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias.
+                    </p>
+                    <a class="btn btn-carrito" href="#" role="button"><img src="img/carrito.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="item shoes-carousel">
+            <img class="animated shoes-img bounceInRight" src="img/calzado/classic_golden.png" alt="placeholder">
             <div class="bg-gris description-shoes">
                 <div class="container alinea-text">
-                    <h1 class="text-center gold animated bounceInLeft">
+                    <h1 class="text-center gold animated text-shoes bounceInLeft">
                         CLASSIC GOLDEN
                     </h1>
-                    <p class="animated bounceInLeft container-small text-classic-golden">
+                    <p class="animated text-shoes bounceInLeft container-small text-classic-golden">
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias.
                     </p>
                     <a class="btn btn-carrito" href="#" role="button"><img src="img/carrito.png"></a>
@@ -191,13 +245,13 @@
             </div>
         </div>
         <div class="item shoes-carousel">
-            <img class="animated bounceInRight" src="img/calzado/elite.png" alt="placeholder">
+            <img class="animated shoes-img bounceInRight" src="img/calzado/elite.png" alt="placeholder">
             <div class="bg-black description-shoes">
                 <div class="container alinea-text">
-                    <h1 class="text-center gold animated white bounceInLeft">
+                    <h1 class="text-center gold animated white text-shoes bounceInLeft">
                         ELITE
                     </h1>
-                    <p class="animated bounceInLeft container-small white">
+                    <p class="animated text-shoes bounceInLeft container-small white">
                         Lorem Ipsum es simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industrias.
                     </p>
                     <a class="btn btn-carrito" href="#" role="button"><img src="img/carrito.png"></a>
@@ -208,10 +262,10 @@
     </div>
 
     <!-- Controls -->
-    <a class="left carousel-control" href="#project-carousel-second" data-slide="prev">
+    <a class="left carousel-control left-shoes" href="#project-carousel-second" data-slide="prev">
         <span class="glyphicon glyphicon-chevron-left"></span>
     </a>
-    <a class="right carousel-control" href="#project-carousel-second" data-slide="next">
+    <a class="right carousel-control right-shoes" href="#project-carousel-second" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right"></span>
     </a>
 </div>
@@ -235,7 +289,7 @@
 </div>
 
 <script type="text/javascript">
-    if(document.getElementById("canvas").getContext){
+    /*<if(document.getElementById("canvas").getContext){
         create_parallelogram(-100, 810, $(".lion").height());
     }
     else {
@@ -353,12 +407,12 @@
 
     function clear_canvas(ctx){
         ctx.clearRect(0, 0, canvas.width, canvas.height);
-    }
+    }*/
 </script>
 </body>
 
 <script>
-    function getMousePos(canvas, evt) {
+    /*function getMousePos(canvas, evt) {
         var rect = canvas.getBoundingClientRect();
         return {
             x: evt.clientX - rect.left,
@@ -384,7 +438,7 @@
         $(canvas).attr('height', $(".lion").height() );
     }
 
-    respondCanvas();
+    respondCanvas();*/
 
 </script>
 

@@ -464,7 +464,8 @@ a.btn.btn-tienda {
     z-index: 9999;
     top: 6%;
     right: -21px;
-    width: 19%;
+    /*width: 19%;*/
+    width: 220px;
     text-align: center;
     padding-left: 40px;
 }
@@ -477,6 +478,12 @@ a:focus {outline : none;}
 
 #myCarousel{
     background: #000;
+}
+
+@media (max-width: 996px){
+    a.btn.btn-tienda{
+        width: 220px;
+    }
 }
 
 @media (max-width: 769px){
@@ -549,9 +556,9 @@ a:focus {outline : none;}
         display: block;
     }
 
-    a.btn.btn-tienda{
+    /*a.btn.btn-tienda{
         width: 49%;
-    }
+    }*/
 }
 
 @media (max-width: 320px){
